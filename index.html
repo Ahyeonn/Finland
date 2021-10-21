@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+ <meta charset="UTF-8">
+  <title>Finland</title>
+  <style>
+	body{
+		font-family:sans-serif;
+	}
+
+    .dashboard {
+		width: 800px;
+		height: 600px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 1em;
+		grid-template-areas: "a a a a"
+							 "b c c c"
+							 "d e f g";
+	}
+
+	.grid-cell {
+		display:flex;
+		color: white;
+		flex-direction: column;
+		padding: 15px;
+		line-height: 20px;
+		background-size: cover;
+	}
+
+	.title {
+		grid-area: a;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.population {
+		grid-area: b;
+		background-image: url('./images/finland-8.jpg');
+		justify-content: flex-end;
+		align-items: flex-start;
+	}
+	
+	.welcome {
+		grid-area: c;
+		background-image: url('./images/finland-2.jpg');
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	.gdp {
+		grid-area: d;
+		background-image: url('./images/finland-3.jpg');
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	.code {
+		grid-area: e;
+		background-image: url('./images/finland-4.jpg');
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.govt {
+		grid-area: f;
+		background-image: url('./images/finland-1.jpg');
+		justify-content: flex-end;
+		align-items: flex-start;
+	}
+
+	.news {
+		grid-area: g;
+		background-image: url('./images/finland-5.jpg');
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	
+	.grid-cell h2{
+		margin: 10px 0px;
+	}
+	
+	.dashboard p{
+		margin: 0px;
+	}
+
+	.news button{
+		align-self: flex-end;
+		margin: 5px 5px 0px 0px;
+	}
+
+  </style>
+
+</head>
+<body>
+  <div class="dashboard">
+    <h1 class="title">Finland</h1>
+
+    <div class="population grid-cell">
+        <h2>population: </h2>
+        <p>5,536,146</p>
+    </div>
+    
+    <div class="welcome grid-cell">
+      <h2>Welcome</h2>
+      <p>Natural Resources, Economic Initiatives, Community Spaces</p>
+    </div>
+
+    <div class="gdp grid-cell">
+      <h2>GDP</h2>
+      <p>257 billion</p>
+    </div>
+
+    <div class="code grid-cell">
+      <h2>Calling Code</h2>
+      <p>+ 358</p>
+    </div>
+
+    <div class="govt grid-cell">
+      <h2>Government</h2>
+      <p>Unitary parliamentary republic</p>
+    </div>
+
+    <div class="news grid-cell">
+      <h2>News</h2>
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="name"/>
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="email"/>
+      <button>Send</button>
+    </div>
+
+  </div>
+  
+</body>
+</html>
