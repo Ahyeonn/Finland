@@ -4,4 +4,4 @@ This is a website about Finland that is created by using HTML, CSS, and JavaScri
  
 ## Check My Website
 
-https://replit.com/@AhyeonJeon1/Strawberry-Fruit-Pie#main.py
+https://ahyeonn.github.io/Finland/
